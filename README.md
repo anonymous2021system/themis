@@ -1,4 +1,5 @@
-# This is the code for the SOSP submission. Belows are the commands to obtain the experiment results in the paper.
+# This is the code for SOSP'21 submission
+Belows are the commands to obtain the experiment results in the paper.
 
 # convergence analysis
 python run.py --dataset mnist --attack rand --diff --adv --samplesize 100
