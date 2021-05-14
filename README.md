@@ -1,4 +1,6 @@
-#convergence analysis
+# This is the code for the SOSP submission. Belows are the commands to obtain the experiment results in the paper.
+
+# convergence analysis
 python run.py --dataset mnist --attack rand --diff --adv --samplesize 100
 --attack: type of attack [rand/pgd] (required)
 --dataset: what dataset [mnist/cifar10] (required)
@@ -27,7 +29,8 @@ python run.py --attack rand --dataset cifar10 --model wideresnet --eval --epsilo
 python run.py --attack pgd --dataset cifar10 --model wideresnet --retrain --epsilon 0.01 --num_data 100
 python analyze_mcmc.py --mode mcmc --path metadata/1/mcmc_info_cifar10_densenet121_pgd_1000_0.05.txt --t 0.0
 
-gen_acc.py #massively gen dataset, retrain and evaluate
+# massively gen dataset, retrain and evaluate
+gen_acc.py 
 --mode: which mode [gen/retrain/eval_original/eval_original] (required)
 --path: which file path (for gen_csv)
 python analyze_mcmc.py:
